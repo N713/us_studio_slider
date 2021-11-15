@@ -1,0 +1,38 @@
+.tag {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-weight: lighter;
+
+    &--new {
+        background-color: $lightGreen;
+        color: $green;
+    }
+
+    &--hit {
+        background-color: $lightOrange;
+        color: $orange;
+    }
+}
+
+@media(max-width: $tabletResolution) {
+    .tag {
+        &--new {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: $mobileResolution) {
+    .tag {
+        &--hit,
+        &--new {
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+}

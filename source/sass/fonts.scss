@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProLight.woff2") format("woff2"),
+      url("../fonts/GothamProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamProMedium.woff2") format("woff2"),
+      url("../fonts/GothamProMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

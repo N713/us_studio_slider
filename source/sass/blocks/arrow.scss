@@ -1,0 +1,42 @@
+.arrow {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: $arrowGray;
+    border: none;
+    margin-right: 2px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+    &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border: 2px solid $textGray;
+        transform: rotate(45deg);
+        border-left: none !important;
+        border-bottom: none !important;
+        top: 8px;
+        left: 8px;
+    }
+
+    &--left::after {
+        transform: rotate(-135deg);
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.6s;
+    }
+}
+
+.arrow:last-of-type {
+    margin-right: 0;
+}

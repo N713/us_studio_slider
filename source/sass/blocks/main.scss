@@ -1,0 +1,21 @@
+.main {
+    box-sizing: border-box;
+    padding: 25px 55px;
+    overflow-x: hidden; 
+}
+
+picture {
+    display: flex;
+}
+
+@media(max-width: $tabletResolution) {
+    .main {
+        padding: 18px 20px;
+    }
+}
+
+@media(max-width: $mobileResolution) {
+    .main {
+        padding: 18px 15px;
+    }
+}
